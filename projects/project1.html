@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Dashboard - My Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>Web Application Dashboard</h1>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="../index.html" class="back-link">← Back to Projects</a>
+        
+        <article class="project-detail">
+            <img src="../assets/images/project1.jpg" alt="Web Application Dashboard" class="project-image-large" onerror="this.src='https://via.placeholder.com/1200x600/4a90e2/ffffff?text=Web+Application+Dashboard'">
+            
+            <div class="project-meta">
+                <strong>Category:</strong> Web Development | <strong>Year:</strong> 2024
+            </div>
+
+            <h2>Overview</h2>
+            <p>
+                The Web Application Dashboard is a comprehensive administrative interface designed for managing complex data and operations. 
+                This project showcases modern web development practices, focusing on user experience, performance, and scalability.
+            </p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Real-time data visualization with interactive charts and graphs</li>
+                <li>User authentication and role-based access control</li>
+                <li>Responsive design that works seamlessly across all devices</li>
+                <li>RESTful API integration for data management</li>
+                <li>Advanced filtering and search capabilities</li>
+                <li>Export functionality for reports (PDF, CSV, Excel)</li>
+                <li>Dark mode support for improved user experience</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">CSS3</span>
+            </div>
+
+            <h2>Challenges & Solutions</h2>
+            <p>
+                One of the main challenges was implementing real-time updates without compromising performance. 
+                I solved this by implementing WebSocket connections with efficient data streaming and implementing 
+                a caching layer to reduce database queries.
+            </p>
+            <p>
+                Another challenge was creating a responsive layout that maintained usability on mobile devices 
+                while displaying complex data tables. I addressed this through progressive disclosure patterns 
+                and touch-friendly interface elements.
+            </p>
+
+            <h2>Results</h2>
+            <p>
+                The dashboard has been successfully deployed and is used by over 500 users daily. 
+                It has significantly improved operational efficiency, reducing data access time by 60% 
+                and increasing user satisfaction scores by 45%.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
