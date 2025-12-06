@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analysis Tool - My Portfolio</title>
+    <title>Ravi's Portfolio</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
         <nav class="container">
-            <h1>Data Analysis Tool</h1>
+            <div class="brand">
+                <h1>University Projects Collection</h1>
+                <p class="tagline">Various small projects completed during my studies</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Rsnelllenberg" title="GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.63 1.65.23 2.87.11 3.17.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rsnelllenberg" title="LinkedIn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11.02 0H5a2.5 2.5 0 010 5h-.02A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V21H16v-5.1c0-1.2 0-2.8-1.7-2.8-1.7 0-2 1.4-2 2.7V21H9V9z"></path></svg>
+                </a>
+                <a href="../assets/pdfs/RavisSnellenberg_CV(low_res).pdf" title="CV" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm1 7V3.5L20.5 9H15zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"></path></svg>
+                </a>
+            </div>
         </nav>
     </header>
 
@@ -17,56 +31,67 @@
         <a href="../index.html" class="back-link">← Back to Projects</a>
         
         <article class="project-detail">
-            <img src="../assets/images/project3.jpg" alt="Data Analysis Tool" class="project-image-large" onerror="this.src='https://via.placeholder.com/1200x600/ff6b6b/ffffff?text=Data+Analysis+Tool'">
-            
             <div class="project-meta">
-                <strong>Category:</strong> Data Science | <strong>Year:</strong> 2024
+                <strong>Category:</strong> Academic Projects | <strong>Year:</strong> Various
             </div>
 
             <h2>Overview</h2>
             <p>
-                An advanced data analysis platform that enables users to process, analyze, and visualize large datasets. 
-                This tool combines statistical analysis with machine learning capabilities to provide actionable insights 
-                from complex data.
+                A collection of small university assignments and projects covering topics such as real-time rendering, image processing, GPU programming, and volume visualization.
             </p>
 
-            <h2>Key Features</h2>
-            <ul>
-                <li>Import data from multiple sources (CSV, JSON, databases, APIs)</li>
-                <li>Data cleaning and preprocessing tools</li>
-                <li>Statistical analysis with comprehensive reports</li>
-                <li>Machine learning model training and evaluation</li>
-                <li>Interactive visualizations with customizable charts</li>
-                <li>Predictive analytics and forecasting</li>
-                <li>Export results in multiple formats</li>
-            </ul>
+            <h2>Included Projects</h2>
+            <div class="projects-list">
+                <article class="uni-project">
+                    <h3>Pizzicato</h3>
+                    <p>
+                        A rhythm serious-game using Mediapipe hand tracking. Originally made with a group of 3 other students in collaboration with psychology researchers from Leiden University.
+                        And it has gone on to be used for further research and has at this stage entered the clinical trails stage, for possible use in rehabilitating patients that have lost motor control in their hands.
+                    </p>
+                    <img src="../assets/images/pizzicato.png" alt="Pizzicato" class="project-image-large" onerror="this.src='https://via.placeholder.com/400x250?text=Pizzicato'">
+                </article>
 
-            <h2>Technologies Used</h2>
-            <div class="tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">NumPy</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">Matplotlib</span>
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">PostgreSQL</span>
+                <article class="uni-project">
+                    <h3>Holonomy</h3>
+                    <p>A VR project about having a player move in a hyperbolic tile-grid, which has the intresting property of alowing players to traverse anfinite space in the game world while physically staying in the same small area in the real world by making use of the inherent properties of this curved space.</p>
+                    It originally started out as a practical school project made in the second year of my bachelor with 3 other students.
+                    I ended up getting hired by my proffesor to continue working on the project on periodically for around 2 years (with other students coming and going over that period).
+                    I mostly worked on the underlying logic of the tile grid and its interactions (such as shortest path algorithms), as well as helping the others with various other aspects of the game such as the portal systems (which make use of stencil buffers).
+                    </p>
+                    <img src="../assets/images/holonomy.png" alt="Holonomy" class="project-image-large" onerror="this.src='https://via.placeholder.com/400x250?text=Holonomy'">
+                </article>
+
+                <article class="uni-project">
+                    <img src="../assets/images/placeholder_volume_vis.png" alt="Volume Visualization" onerror="this.src='https://via.placeholder.com/400x250?text=Volume+Vis'">
+                    <h3>Volume Visualization in C++</h3>
+                    <p>
+                        With two other students we implemented the features of a basic volume visualization tool with ambient occlusion, curvature volumes and multiple composition modes.
+                        I later expanded on this with extra transfer functions and an interactive experience explaining a method proposed by this paper: TODO add paper link
+                        Later on I got hired by the University to further improve their coding enviroment with GPU volume rendering and its various ways of speeding this up (volume bricking, empty space skipping, ect).
+                        This version later got used as the project template for the assignments of a newly created course on data visualiztion. TODO add picture
+                    </p>
+                </article>
+
+                <article class="uni-project">
+                    <h3>3D Game Engine (OpenGL)</h3>
+                    <p>With one other partner we build a simple C++/OpenGL game engine. Which included stuff a bunch of shaders and post processing effects. Dynamic cubemaps, lighting and physics. And a bunch of optimization features such as frustrum culling and and instancing </p>
+                    <img src="../assets/images/Uni_project_3D_engine.png" alt="University projects" class="project-image-large" onerror="this.src='https://via.placeholder.com/1200x600/666/ffffff?text=University+Projects'">
+                </article>
+
+                <article class="uni-project">
+                    <img src="../assets/images/placeholder_image_proc.png" alt="Image Processing" class="project-image-large" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Processing'">
+                    <h3>Image Processing</h3>
+                    <p>Multiple projects: painterly stylization, depth-from-scribbles, style transfer using PyTorch. TODO: expand, add images</p>
+                </article>
             </div>
 
-            <h2>Challenges & Solutions</h2>
-            <p>
-                Processing large datasets efficiently was a major challenge. I implemented optimized algorithms 
-                and utilized parallel processing to handle datasets with millions of rows without performance degradation.
-            </p>
-            <p>
-                Making complex statistical concepts accessible to non-technical users required careful UI/UX design. 
-                I created intuitive visualizations and interactive tutorials to guide users through the analysis process.
-            </p>
-
-            <h2>Results</h2>
-            <p>
-                The tool has been adopted by several organizations for their data analysis needs. 
-                It has reduced analysis time by 70% and enabled data-driven decision making across multiple departments.
-            </p>
+            <h2>Technologies Commonly Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">OpenGL/GLSL</span>
+                <span class="tech-tag">OpenCL</span>
+                <span class="tech-tag">Python</span>
+            </div>
         </article>
     </main>
 

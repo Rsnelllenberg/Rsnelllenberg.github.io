@@ -3,70 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Coding Projects</title>
+    <title>Ravi's Portfolio - Coding Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="container">
-            <h1>My Portfolio</h1>
-            <p class="tagline">Showcasing my coding projects</p>
+            <div class="brand">
+                <h1>Ravi Snellenberg</h1>
+                <p class="tagline">Computer Graphics Enthusiast |  Software Engineer</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Rsnelllenberg" title="GitHub" target="_blank" rel="noopener">
+                    <!-- GitHub SVG -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.63 1.65.23 2.87.11 3.17.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ravi-snellenberg/" title="LinkedIn" target="_blank" rel="noopener">
+                    <!-- LinkedIn SVG -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11.02 0H5a2.5 2.5 0 010 5h-.02A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V21H16v-5.1c0-1.2 0-2.8-1.7-2.8-1.7 0-2 1.4-2 2.7V21H9V9z"></path></svg>
+                </a>
+                <a href="assets/pdfs/RavisSnellenberg_CV(low_res).pdf" title="CV" target="_blank" rel="noopener">
+                    <!-- CV / Document SVG -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm1 7V3.5L20.5 9H15zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"></path></svg>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main class="container">
         <section class="projects-grid">
-            <!-- Project 1 -->
+            <!-- CUDA SPA Fluid Simulation -->
             <article class="project-card">
                 <a href="projects/project1.html" class="project-link">
                     <div class="project-image">
-                        <img src="assets/images/project1.jpg" alt="Project 1 Preview" onerror="this.src='https://via.placeholder.com/600x400/4a90e2/ffffff?text=Project+1'">
+                        <img src="assets/images/GPU_fluid_particles.png" alt="CUDA SPA Fluid Simulation" onerror="this.src='https://via.placeholder.com/600x400/222/ffffff?text=CUDA+SPA+Simulation'">
                     </div>
                     <div class="project-content">
-                        <h2>Web Application Dashboard</h2>
-                        <p class="project-snippet">A modern web dashboard built with responsive design principles. Features real-time data visualization, user authentication, and intuitive navigation...</p>
+                        <h2>CUDA SPA Fluid Simulation</h2>
+                        <p class="project-snippet">Real-time SPH particle simulation rendering ~10M particles on the GPU. Work-in-progress: multi-material support and improved volume renderer.</p>
                         <span class="read-more">Read More →</span>
                     </div>
                 </a>
             </article>
 
-            <!-- Project 2 -->
+            <!-- Master Thesis -->
             <article class="project-card">
                 <a href="projects/project2.html" class="project-link">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2 Preview" onerror="this.src='https://via.placeholder.com/600x400/50c878/ffffff?text=Project+2'">
+                        <img src="assets/images/master_thesis.png" alt="Master Thesis" onerror="this.src='https://via.placeholder.com/600x400/333/ffffff?text=Master+Thesis'">
                     </div>
                     <div class="project-content">
-                        <h2>Mobile Task Manager</h2>
-                        <p class="project-snippet">A cross-platform mobile application for task management and productivity. Built with modern frameworks and cloud integration for seamless syncing...</p>
+                        <h2>Master Thesis — Multivariate Volume Rendering</h2>
+                        <p class="project-snippet">Research on rendering highly multivariate volumetric datasets. Publication and demo video available.</p>
                         <span class="read-more">Read More →</span>
                     </div>
                 </a>
             </article>
 
-            <!-- Project 3 -->
+            <!-- University Projects -->
             <article class="project-card">
                 <a href="projects/project3.html" class="project-link">
                     <div class="project-image">
-                        <img src="assets/images/project3.jpg" alt="Project 3 Preview" onerror="this.src='https://via.placeholder.com/600x400/ff6b6b/ffffff?text=Project+3'">
+                        <img src="assets/images/Uni_project_3D_engine.png" alt="University Projects" onerror="this.src='https://via.placeholder.com/600x400/666/ffffff?text=University+Projects'">
                     </div>
                     <div class="project-content">
-                        <h2>Data Analysis Tool</h2>
-                        <p class="project-snippet">An advanced data analysis platform for processing and visualizing large datasets. Implements machine learning algorithms for predictive analytics...</p>
-                        <span class="read-more">Read More →</span>
-                    </div>
-                </a>
-            </article>
-
-            <!-- Project 4 -->
-            <article class="project-card">
-                <a href="projects/project4.html" class="project-link">
-                    <div class="project-image">
-                        <img src="assets/images/project4.jpg" alt="Project 4 Preview" onerror="this.src='https://via.placeholder.com/600x400/9b59b6/ffffff?text=Project+4'">
-                    </div>
-                    <div class="project-content">
-                        <h2>E-Commerce Platform</h2>
-                        <p class="project-snippet">A full-stack e-commerce solution with shopping cart, payment integration, and admin dashboard. Features include inventory management and order tracking...</p>
+                        <h2>University Projects Collection</h2>
+                        <p class="project-snippet">A curated collection of university assignments and small projects in graphics, GPU programming, and visualization.</p>
                         <span class="read-more">Read More →</span>
                     </div>
                 </a>

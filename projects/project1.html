@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Application Dashboard - My Portfolio</title>
+    <title>Ravi's Portfolio</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
         <nav class="container">
-            <h1>Web Application Dashboard</h1>
+            <div class="brand">
+                <h1>CUDA SPA Fluid Simulation</h1>
+                <p class="tagline">Real-time GPU particle fluid simulation (current project)</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Rsnelllenberg" title="GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.63 1.65.23 2.87.11 3.17.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.07.8 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rsnelllenberg" title="LinkedIn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11.02 0H5a2.5 2.5 0 010 5h-.02A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V21H16v-5.1c0-1.2 0-2.8-1.7-2.8-1.7 0-2 1.4-2 2.7V21H9V9z"></path></svg>
+                </a>
+                <a href="../assets/pdfs/RavisSnellenberg_CV(low_res).pdf" title="CV" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm1 7V3.5L20.5 9H15zM8 13h8v2H8v-2zm0 4h8v2H8v-2z"></path></svg>
+                </a>
+            </div>
         </nav>
     </header>
 
@@ -17,58 +31,34 @@
         <a href="../index.html" class="back-link">← Back to Projects</a>
         
         <article class="project-detail">
-            <img src="../assets/images/project1.jpg" alt="Web Application Dashboard" class="project-image-large" onerror="this.src='https://via.placeholder.com/1200x600/4a90e2/ffffff?text=Web+Application+Dashboard'">
-            
+            <img src="../assets/images/GPU_fluid_particles.png" alt="CUDA SPA Fluid Simulation" class="project-image-large" onerror="this.src='https://via.placeholder.com/1200x600/222/ffffff?text=CUDA+SPA+Fluid+Simulation'">
+
             <div class="project-meta">
-                <strong>Category:</strong> Web Development | <strong>Year:</strong> 2024
+                <strong>Category:</strong> GPU Computing / Real-time Simulation | <strong>Status:</strong> In progress
             </div>
 
             <h2>Overview</h2>
             <p>
-                The Web Application Dashboard is a comprehensive administrative interface designed for managing complex data and operations. 
-                This project showcases modern web development practices, focusing on user experience, performance, and scalability.
+                A CUDA-accelerated Smoothed Particle Hydrodynamics (SPH) single-fluid simulation that can render ~10 million particles
+                at around 30 FPS on current hardware. The project focuses on high-performance particle simulation on the GPU and is mainly a personal learning exercise for me to get more familiar with CUDA programming in a enjoyable context.
+            </p>
+            <p>
+                I am currently working on further expanding it to support multiple mixable/soluble and non-soluble materials and solids.
+                And in the future, I plan on improving the volume renderer (also done in CUDA) that is used to visualize the particles as is currently a bit noisy and slow, even without supporting multiple ray bounces/reflections yet.
             </p>
 
-            <h2>Key Features</h2>
-            <ul>
-                <li>Real-time data visualization with interactive charts and graphs</li>
-                <li>User authentication and role-based access control</li>
-                <li>Responsive design that works seamlessly across all devices</li>
-                <li>RESTful API integration for data management</li>
-                <li>Advanced filtering and search capabilities</li>
-                <li>Export functionality for reports (PDF, CSV, Excel)</li>
-                <li>Dark mode support for improved user experience</li>
-            </ul>
+            <h2>Recources</h2>
+            <p> <a href="https://github.com/Rsnelllenberg/CUDA-interactive-fluid-particles" target="_blank" rel="noopener">Github repository link: https://github.com/Rsnelllenberg/CUDA-interactive-fluid-particles </a> </p>
+            <p>
+                TODO: add video of the current simulation: <a href="" target="_blank" rel="noopener">Simulation video</a>
+            </p>
 
             <h2>Technologies Used</h2>
             <div class="tech-stack">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Express</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Chart.js</span>
-                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">CUDA</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">CMake</span>
             </div>
-
-            <h2>Challenges & Solutions</h2>
-            <p>
-                One of the main challenges was implementing real-time updates without compromising performance. 
-                I solved this by implementing WebSocket connections with efficient data streaming and implementing 
-                a caching layer to reduce database queries.
-            </p>
-            <p>
-                Another challenge was creating a responsive layout that maintained usability on mobile devices 
-                while displaying complex data tables. I addressed this through progressive disclosure patterns 
-                and touch-friendly interface elements.
-            </p>
-
-            <h2>Results</h2>
-            <p>
-                The dashboard has been successfully deployed and is used by over 500 users daily. 
-                It has significantly improved operational efficiency, reducing data access time by 60% 
-                and increasing user satisfaction scores by 45%.
-            </p>
         </article>
     </main>
 
