@@ -33,6 +33,56 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Site header rotator */
+.site-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-rotator {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.header-rotator.visible { opacity: 1; }
+.header-rotator:not(.visible) { opacity: 0; }
+
+.site-header .container { position: relative; z-index: 1; }
+
+.site-nav-and-social { display: flex; gap: 18px; align-items: center; }
+.site-nav a { color: white; margin-right: 14px; font-weight: 600; opacity: 0.95; }
+.site-nav a:hover { opacity: 1; text-decoration: underline; }
+
+/* Project-specific header that uses thumbnail images */
+.project-header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.project-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 0;
+}
+
+.project-header .container,
+.project-header .brand {
+    position: relative;
+    z-index: 1;
+}
+
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
