@@ -44,18 +44,32 @@
 
             <h2>Overview</h2>
             <p>
-                A CUDA-accelerated Smoothed Particle Hydrodynamics (SPH) single-fluid simulation that can render ~10 million particles
-                at around 30 FPS on current-gen hardware. The project focuses on high-performance particle simulation on the GPU and is mainly a personal learning exercise for me to get more familiar with CUDA programming in a enjoyable context.
+                A CUDA-accelerated Weakly Compressible Smoothed Particle Hydrodynamics (WCSPH) single-fluid simulation that can render ~10 million particles at around 30 FPS on current-gen hardware (RTX 5080).
+                A WCSPH simulation creates a fluid by moving many particles that represent small volumes of the fluid.
+                These particles are moved by external forces like gravity, and each particle has an area of influence defined by a smoothing kernel function that represents the density the particle contributes to its surroundings. Particles are given corrective forces so that the combined density of all particles in the neighborhood approaches the target fluid density.
+            </p>
+            <img src="../assets/images/GPU_fluid_particles_debug.jpg" alt="Debug screenshots: unstable (left) and stable (right) states" class="project-image-large" onerror="this.src='https://via.placeholder.com/1200x600/222/ffffff?text=CUDA+SPA+Fluid+Simulation+Debug'">
+            <p class="image-caption">Debug view (left: unstable state; right: stable state). Areas with density higher than the target are shown in red; areas with density lower than the target are shown in blue. Black arrows are gravity(extrenal force), Green arrows represent the corrective forces that force the correct density(internal force)</p>
+
+            <p>
+                This simulates fluid-like behavior by modelling incompressibility. Besides incompressibility, there are other physical properties that real fluids have which are added to the simulation to make it more realistic, such as viscosity (internal friction of the fluid).
+                These can also be modelled using SPH particles by adding additional forces based on the relative velocity of nearby particles.
+            </p>
+            <h2>TODO</h2>
+            <p>
+                I am currently working on further expanding it to support multiple mixable/soluble and non-soluble materials and solids (using primarily this paper: <a href="https://dl.acm.org/doi/10.1111/cgf.14102" target="_blank" rel="noopener">A divergence-free mixture model for multiphase fluids </a> ).
+                As that paper makes use of IISPH (Implicit Incompressible SPH) rather than WCSPH, I might also convert the simulation to IISPH depending on the impact that will have.
             </p>
             <p>
-                I am currently working on further expanding it to support multiple mixable/soluble and non-soluble materials and solids.
-                And in the future, I plan on improving the volume renderer (also done in CUDA) that is used to visualize the particles as is currently a bit noisy and slow, even without supporting multiple ray bounces/reflections yet.
+                I also still need to improve the volume renderer (also done in CUDA) that is used to visualize the particles as is currently a bit noisy and slow, even without supporting multiple ray bounces/reflections yet.
+                And I am also aware of several other areas of the algorithm that could be improved upon in term of performance, but I will see first try to get the new functionality in place before optimizing further.
+                But I will wait and see if I still have the motivation to add these after adding multi-material support as that is my main goal for this project currently.
             </p>
 
             <h2>Recources</h2>
             <p> <a href="https://github.com/Rsnelllenberg/CUDA-interactive-fluid-particles" target="_blank" rel="noopener">Github repository link: https://github.com/Rsnelllenberg/CUDA-interactive-fluid-particles </a> </p>
             <p>
-                TODO: add video of the current simulation: <a href="" target="_blank" rel="noopener">Simulation video</a>
+                TODO: add video of the current simulation: I will probably do this once I have added multi-materials
             </p>
 
             <h2>Technologies Used</h2>
